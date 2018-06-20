@@ -2,17 +2,23 @@
 <html>
 <head>
   <title>Health Service</title>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
-    <div class="logo">
-      <a href="#">
-        <img src="images/logo.jpg" alt="logo">
-      </a>
-      <h1><a href="#">Specialized Clinic</a></h1>
-      <a href="#"><span>Physiotherapy - Rehabitilation</span></a>
-      <i class="icon-phone"></i><p>Question for the doctor? <span>05113941 977</span></p>
-    </div>
+    <section class="section-logo">
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo.jpg" alt="logo">
+        </a>
+        <div class="logo-text">
+          <h1><a href="#">Specialized Clinic</a></h1>
+          <a href="#"><span>Physiotherapy - Rehabitilation</span></a>
+        </div>
+      </div>
+      <p class="number-phone"> Question for the doctor? <span> 05113941 977</span></p>
+    </section>
     <nav class="nav-menu">
       <ul class="menu-list">
         <li class="menu-item"><a href="#">Home</a></li>
@@ -23,23 +29,23 @@
         <li class="menu-item"><a href="#">Consult &amp; Contact</a></li>
       </ul>
       <ul class="social-list">
-        <li class="social-item"><a href="#"><i class="icon-facebook"></i></a></li>
-        <li class="social-item"><a href="#"><i class="icon-google"></i></a></li>
-        <li class="social-item"><a href="#"><i class="icon-youtube"></i></a></li>
+        <li class="social-item"><a href="#"><img src="images/face.jpg" alt="Face"></a></li>
+        <li class="social-item"><a href="#"><img src="images/gg.jpg" alt="GG"></a></li>
+        <li class="social-item"><a href="#"><img src="images/youtube.jpg" alt="Youtube"></a></li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <div class="breadcrumbs">
       <ul class="link-list">
-        <li><a href="#">Home</a></li>
-        <li>Health Service</li>
+        <li class="link-item"><a href="#">Home</a></li>
+        <li class="link-item">Health Service</li>
       </ul>
     </div>
-    <aside class="sidebar-left">
-      <div class="category-service">
-        <ul class="category-list">
-          <li class="category-item"><a>Adults<i class="icon-sub"></i></a>
+    <div class="content">
+      <aside class="sidebar-left">
+          <div class="category-item">
+            <a>Adults<i class="icon-sub"></i></a>
             <ul class="adults-list">
               <li class="adults-item"><a href="#">Neck-shouler-hand pain</a></li>
               <li class="adults-item"><a href="#">Spinal pain</a></li>
@@ -51,88 +57,93 @@
               <li class="adults-item"><a href="#">Sequelae of stoke</a></li>
               <li class="adults-item"><a href="#">Traumatic sequelae</a></li>
             </ul>
+          </div>
+          <div class="category-item">
+            <a>Children
+              <i class="icon-add"></i>
+            </a>
           </li>
-          <li class="category-item"><a>Children<i class="icon-add"></i></a></li>
+      </aside>
+          
+        <div class="form-schedule">
+          <h3>Book Schedule</h3>
+          <form action="#" method="post">
+            <div>
+              <input type="text" name="fullname" placeholder="Full name">
+            </div>
+            <div>
+              <input type="text" name="address" placeholder="Address">
+            </div>
+            <div>
+              <input type="text" name="phonenumber" placeholder="Phone number">
+            </div>
+            <div>
+              <input type="date" name="time" placeholder="Time">
+            </div>
+            <div>
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </aside>
+      <div class="container">
+        <ul class="service-list">
+          <li class="service-item">
+            <a href="#"><img src="images/hinh1.jpg" alt="Service Image"></a>
+            <h3><a href="#">Neck shoulder pain</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh2.jpg" alt="Service Image"></a>
+            <h3><a href="#">Neck shoulder pain</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh3.jpg" alt="Service Image"></a>
+            <h3><a href="#">Neck shoulder pain</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh4.jpg" alt="Service Image"></a>
+            <h3><a href="#">Neck shoulder pain</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh5.jpg" alt="Service Image"></a>
+            <h3><a href="#"><h3>Slow say</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh6.jpg" alt="Service Image"></a>
+            <h3><a href="#"><h3>Slow say</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh7.jpg" alt="Service Image"></a>
+            <h3><a href="#"><h3>Slow say</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh8.jpg" alt="Service Image"></a>
+            <h3><a href="#">Neck shoulder pain</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
+          <li class="service-item">
+            <a href="#"><img src="images/hinh9.jpg" alt="Service Image"></a>
+            <h3><a href="#">Neck shoulder pain</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <a href="#"><i class="icon-action"></i></a>
+          </li>
         </ul>
       </div>
-      <div class="form-schedule">
-        <h3>Book Schedule</h3>
-        <form action="#" method="post">
-          <div>
-            <input type="text" name="fullname" placeholder="Full name">
-          </div>
-          <div>
-            <input type="text" name="address" placeholder="Address">
-          </div>
-          <div>
-            <input type="text" name="phonenumber" placeholder="Phone number">
-          </div>
-          <div>
-            <input type="date" name="time" placeholder="Time">
-          </div>
-          <div>
-            <button type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-    </aside>
-    <div class="container">
-      <ul class="service-list">
-        <li class="service-item">
-          <a href="#"><img src="images/hinh1.jpg" alt="Service Image"></a>
-          <h3><a href="#">Neck shoulder pain</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh2.jpg" alt="Service Image"></a>
-          <h3><a href="#">Neck shoulder pain</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh3.jpg" alt="Service Image"></a>
-          <h3><a href="#">Neck shoulder pain</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh4.jpg" alt="Service Image"></a>
-          <h3><a href="#">Neck shoulder pain</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh5.jpg" alt="Service Image"></a>
-          <h3><a href="#"><h3>Slow say</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh6.jpg" alt="Service Image"></a>
-          <h3><a href="#"><h3>Slow say</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh7.jpg" alt="Service Image"></a>
-          <h3><a href="#"><h3>Slow say</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh8.jpg" alt="Service Image"></a>
-          <h3><a href="#">Neck shoulder pain</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-        <li class="service-item">
-          <a href="#"><img src="images/hinh9.jpg" alt="Service Image"></a>
-          <h3><a href="#">Neck shoulder pain</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a href="#"><i class="icon-action"></i></a>
-        </li>
-      </ul>
     </div>
   </main>
   <footer class="page-footer">

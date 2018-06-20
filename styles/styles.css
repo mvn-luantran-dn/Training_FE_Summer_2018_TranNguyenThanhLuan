@@ -1,0 +1,170 @@
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.page-header {
+  height: 156px;
+  position: relative;
+}
+
+.page-main {
+  height: 1134px;
+}
+
+.page-footer {
+  height: 260px;
+}
+
+.section-logo {
+  margin-top: 10px;
+  margin-left: 180px;
+  height: 95px;
+}
+
+.section-logo::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  height: 68px;
+}
+
+.logo-text {
+  float: right;
+  margin-left: 10px;
+}
+
+.logo-text h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 10px 0 8px 0;
+}
+
+.logo-text a {
+  font-family: Myriad Pro;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.logo-text span {
+  margin-bottom: 10px;
+}
+
+.number-phone {
+  float: right;
+  font-family: Arial;
+  font-weight: bold;
+  background-image: url("../images/phone.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 14px;
+  font-style: italic;
+  padding-left: 35px;
+  margin-right: 125px;
+}
+
+.number-phone span {
+  font-size: 18px;
+  color: #4cc1fc;
+  line-height: 3.5;
+  font-style: normal;
+}
+
+.nav-menu {
+  border-top: 1px solid #e9e9e9;
+  height: 62px;
+}
+
+ul.menu-list {
+  margin-left: 180px;
+  float: left;
+}
+
+li.menu-item {
+  display: inline-block;
+  padding: 22px 5px;
+  border-right: 1px solid #e9e9e9;
+  margin: 0;
+}
+
+li.menu-item:last-child {
+  border: 0;
+}
+
+li.menu-item a {
+  text-decoration: none;
+  color: #8e8e8e;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+ul.social-list {
+  float: right;
+  margin-right: 125px;
+  line-height: 4.5;
+}
+
+li.social-item {
+  display: inline-block;
+}
+
+.breadcrumbs {
+  background-image: url("../images/banner.jpg");
+  height: 160px;
+}
+
+ul.link-list {
+  margin-left: 180px;
+}
+
+li.link-item {
+  display: inline;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Myriad Pro;
+}
+
+li.link-item a {
+  text-decoration: none;
+  line-height: 13;
+  color: black;
+}
+
+li.link-item+li.link-item::before {
+  content: "/";
+  padding: 0 10px;
+}
+
+.content {
+  margin-left: 180px;
+  margin-top: 75px;
+}
+
+.content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sidebar-left {
+  float: left;
+  width: 294px;
+}
+
+.container {
+  float: right;
+}
+
+li.category-item {
+  background-color: #d9e4e9;
+  padding: 3px;
+}
