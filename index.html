@@ -2,25 +2,28 @@
 <html>
 <head>
   <title>Health Service</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/reponsive.css">
 </head>
 <body>
   <header class="page-header">
-    <section class="section-logo wrap clr">
-        <div class="logo">
-          <a href="#">
-            <img src="images/logo.jpg" alt="logo">
-          </a>
-          <div class="logo-text">
-            <h1><a href="#">Specialized Clinic</a></h1>
-            <a href="#"><span>Physiotherapy - Rehabitilation</span></a>
-          </div>
+    <div class="header-top wrap clr">
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo.jpg" alt="logo">
+        </a>
+        <div class="logo-text">
+          <h1><a href="#">Specialized Clinic</a></h1>
+          <a href="#"><span>Physiotherapy - Rehabitilation</span></a>
         </div>
+      </div>
       <p class="number-phone">Question for the doctor?<span> 05113941 977</span></p>
-    </section>
-    <div class="border-top">
+    </div>
+    <div class="header-bottom">
+      <i class="fa fa-bars"></i>
       <nav class="nav-menu wrap clr">
         <ul class="menu-list">
           <li class="menu-item"><a href="#">Home</a></li>
@@ -46,9 +49,11 @@
       </ul>
     </div>
     <div class="container clr">
+      <div class="drop-box">
+      </div>
       <aside class="sidebar-left">
         <div class="category-item">
-          <p>Adults <a href="#" class="icon-sub"> - </a></p>
+          <p>Adults <span class="icon-sub">-</span></p>
           <ul class="adults-list">
             <li class="adults-item"><a href="#">Neck-shouler-hand pain</a></li>
             <li class="adults-item"><a href="#">Spinal pain</a></li>
@@ -62,7 +67,7 @@
           </ul>
         </div>
         <div class="category-item">
-          <p>Children <a href="#" class="icon-sub"> + </a></p>
+          <p>Children <span class="icon-sub">+</span></p>
         </div>
         <div class="form-schedule">
           <h3>Book Schedule</h3>
@@ -85,6 +90,11 @@
           </form>
         </div>
       </aside>
+      <ul class="category-list">
+        <li class="cat-hidden"><a href="#">Adults</a></li>
+        <li class="cat-hidden"><a href="#">Children</a></li>
+        <li class="cat-hidden"><a href="#">Book schedule</a></li>
+      </ul>
       <ul class="service-list">
         <li class="service-item">
           <div class="service-border">
@@ -162,7 +172,7 @@
     </div>
   </main>
   <footer class="page-footer">
-    <div class="infor-company clr">
+    <div class="footer-top clr">
       <ul class="information-list wrap">
         <li class="information-item">
           <h3>About Us</h3>
@@ -190,7 +200,7 @@
         </li>
       </ul>
     </div>
-    <div class="infor-author wrap">
+    <div class="footer-bottom wrap">
       <p class="copy-right">&copy; 2018 Copyright of specialized clinic</p>
       <p class="design">Desin by <a href="">Dd.com</a></p>
     </div>
