@@ -16,12 +16,16 @@
   background-color: rgb(98, 198, 248);
 }
 
+.wrap {
+  box-sizing: border-box;
+  max-width: 1270px;
+  margin: 0px auto;
+  height: auto;
+}
+
 .section-logo {
   margin: 15px auto;
   height: auto;
-  padding: 15px;
-  box-sizing: border-box;
-  max-width: 1270px;
 }
 
 .border-top {
@@ -84,10 +88,7 @@
 
 .nav-menu {
   height: auto;
-  margin: 0 auto;
-  height: auto;
-  box-sizing: border-box;
-  max-width: 1270px;
+  padding: 0;
 }
 
 .clr::after {
@@ -104,7 +105,6 @@ li.menu-item {
   display: inline-block;
   padding: 22px 5px;
   border-right: 1px solid rgb(233, 233, 233);
-  margin: 0;
 }
 
 li.menu-item:last-child {
@@ -133,13 +133,6 @@ li.social-item {
   background-image: url("../images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-ul.link-list {
-  margin: 0 auto;
-  height: auto;
-  box-sizing: border-box;
-  max-width: 1270px;
 }
 
 li.link-item {
@@ -311,8 +304,7 @@ li.service-item span {
 }
 
 ul.information-list {
-  margin: 40px auto 0;
-  max-width: 1240px;
+  margin-top: 40px;
 }
 
 .infor-company {
@@ -365,8 +357,6 @@ li.socialf-item span {
 
 .infor-author {
   padding: 30px 0;
-  margin: 0 auto;
-  max-width: 1240px;
 }
 
 .infor-author p {
