@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScripts</title>
+  <script type="text/script" src="main.js"></script>
+</head>
+<body>
+  <h1>HTML + Javascript Exercise</h1>
+  <h3>Knowledge round-up</h3>
+  <ul>
+    <li>
+      <p>What are the differences between a variable that is: null, undefined?</p>
+      <p>+ Underfined là một biến đã được khai báo nhưng chưa được gán giá trị và nó là một kiểu cuả chính nó</p>
+      <p>+ Null là giá trị của một biến và nó là một kiểu đối tượng</p>
+    </li>
+    <li>
+      <p>What is use strict? what are the advantages and disadvantages to using it?</p>
+      <p>+ Khi đặt "use strict"; ở đầu đoạn code (hoặc hàm), khi đó Javascript sẽ được đánh giá ở chế độ nghiêm ngặt (strict mode). Strict mode ném nhiều lỗi hơn và vô hiệu hóa một số tính năng trong nỗ lực làm cho code dễ đọc hơn và chính xác
+      hơn.
+      <p>+ Advantages:</p>
+      <ul>
+        <li>
+          <p>Nó bắt một số lỗi mã hóa phổ biến, ném các ngoại lệ.</p>
+        </li>
+        <li>
+          <p>Nghiêm cấm một số cú pháp có thể được xác định trong các phiên bản mới.</p>
+        </li>
+      </ul>
+      <p>+ Disadvantages:</p>
+      <ul>
+        <li>
+          <p>Khó khăn trong việc sử dụng các thư viện ngoài.</p>
+        </li>
+      </ul>
+</p>
+    </li> 
+    <li>
+      <p>What are the differences between == and ===?</p>
+      <p>+ Toán tử === chỉ trả về true nếu như cả hai toán hạng đều cùng một loại và có cùng giá trị. Nếu so sánh khác loại, kết quả
+      sẽ trả về false.</p>
+      <p>+ Toán tử == sẽ cố gắng chuyển đổi kiểu của toán hạng nếu như hai toán hạng có kiểu khác nhau, và chỉ bắt đầu so sánh sự bằng
+      nhau khi đã thực hiện đổi kiểu xong. Nếu kiểu khác nhau, một trong hai, hoặc cả hai toán hạng sẽ được chuyển về một kiểu
+      chung, hay còn gọi là kiểu trung gian.</p>
+      <p>+ Write an example for each case (if any)?</p>
+      <pre>
+        3 == '3' // true
+        3 === '3' // false
+        3 === 3 // true
+        3 == '3 ' // true
+        3 === '3 ' // false
+      </pre>
+    </li>
+    <li>What is different between declaration: var, const and let?
+      <table border="1px solid" width="80%">
+        <tr>
+          <th></th>
+          <th>Var</th>
+          <th>Let</th>
+          <th>Const</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>Phạm vi sử dụng</td>
+            <td>
+              <p>Là biến toàn cục khi khai báo ở ngoài hàm và là biến cục bộ khi được khai báo ở trong hàm.</p>
+              <pre>
+                var greeter = "Hello"; 
+                var times = 4; 
+                if (times > 3) { 
+                  var greeter = "Say Hello";
+                } 
+                console.log(greeter) //"Say Hello"
+              </pre>
+            </td>
+            <td>
+              <p>Chỉ sử dụng được trong block(ở giữa {}) mà nó được khai báo.</p>
+              <pre>
+                greeter = "Hello";
+                let times = 4; 
+                if (times > 3) { 
+                  let greeter = "Say Hello"; 
+                } 
+                console.log(greeter) //"Hello"
+              </pre>
+            </td>
+            <td>Giống với let.</td>
+          </tr>
+          <tr>
+            <td>Khai báo, cập nhật</td>
+            <td>
+              <p>Các biến có thể được khai báo lại và cập nhật.</p>
+              <pre>
+                 var greeter = "hey hi"; 
+                 var greeter = "say Hello instead";
+              </pre>
+            </td>
+            <td>
+              <p>Các biến có thể cập nhật nhưng không thể khai báo lại.</p>
+              <pre>
+                let greeting = "say Hi";
+                let greeting = "say Hello instead";//error
+              </pre>
+            </td>
+            <td>
+              <p>Không thể khai báo lại hay cập nhật.</p>
+              <pre>
+                const greeting = "say Hi"; 
+                greeting = "say Hello instead";//error
+              </pre>
+            </td>
+          </tr>
+          <tr>
+            <td>Sử dụng khi chưa khai báo</td>
+            <td>
+               <p>Biến var sẽ được khởi tạo là không xác định.</p>
+               <pre>
+                console.log (greeter); 
+                var greeter = "say hello"
+               </pre>
+            </td>
+            <td>
+              <p>Biến let sẽ không được khởi tạo. Và sẽ xảy ra lỗi tham chiếu.</p>
+              <pre>
+                console.log (greeter);
+                let greeter = "say hello" // Reference Error.
+              </pre>
+            </td>
+            <td>Giống với let.</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+</body>
+</html>
