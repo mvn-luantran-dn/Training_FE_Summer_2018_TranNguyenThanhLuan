@@ -1,0 +1,142 @@
+.page-header {
+  background-color: #0eeef1;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 35%;
+}
+
+.cart {
+  float: right;
+  margin-top: 40px;
+}
+
+.cart img {
+  width: 20%;
+}
+
+.cart span {
+  color: rebeccapurple;
+}
+
+.cart a {
+  text-decoration: none;
+  color: black;
+}
+
+.cart a:hover {
+  font-size: 25px;
+  color: crimson;
+}
+
+.section-product h1 {
+  font-size: 30px;
+}
+
+.border-product {
+  position: relative;
+  border: 1px solid #ccc;
+  padding-bottom: 50px;
+}
+
+.product-item {
+  float: left;
+  width: calc(100% / 4);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-item img {
+  width: 100%;
+}
+
+.product-item p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.product-item button {
+  position: absolute;
+  bottom: 10px;
+  left: 34%;
+  background-color: #60bdd5;
+  padding: 15px;
+  color: antiquewhite;
+  border: 0;
+  border-radius: 10px;
+}
+
+.page-footer {
+  background-color: #0eeef1;
+}
+
+.page-footer p {
+  text-align: center;
+}
+
+.table-product {
+  border: 2px solid #ccc;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.table-product tr {
+  border: 2px solid #ccc;
+}
+
+.table-product th {
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+.table-product td {
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #ccc;
+}
+
+.th-product {
+  width: 55%;
+}
+
+.th-name {
+  width: 15%;
+}
+
+.th-amount {
+  width: 15%;
+}
+
+.th-action {
+  width: 15%;
+}
+
+.icon-delete {
+  width: 50%;
+}
+
+.section-product span {
+  font-size: 20px;
+  color: red;
+  display: inline-block;
+  padding: 10px;
+}
